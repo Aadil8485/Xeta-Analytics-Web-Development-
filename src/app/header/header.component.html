@@ -1,0 +1,85 @@
+<div class="bg-[#051342] w-full h-auto py-2 sm:py-0 sm:h-16">
+  <div
+    class="h-full w-full flex flex-col justify-center items-center sm:flex-row sm:justify-between sm:px-2"
+  >
+    <div class="h-full flex items-center justify-start w-1/4">
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        ><img
+          class="max-w-[200px] min-w-[40px]"
+          src="/assets/images/FITSNAP.png"
+          alt="FITSNAP"
+      /></a>
+    </div>
+    <div class="sm:w-3/4 h-full mr-4">
+      <ul
+        class="text-white flex justify-end items-center text-center h-full w-full space-x-5 text-[8px] sm:text-xs md:text-sm lg:text-base"
+      >
+        <li>
+          <button>
+            <a
+              routerLink="/home"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >Home</a
+            >
+          </button>
+        </li>
+        <li>
+          <a
+            routerLink="/workoutplan"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+          >
+            WORKOUTPLAN
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/aitracker"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            >AI TRACKER</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/exercise"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            >EXERCISE</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <div
+            class="flex justify-center items-center text-center space-x-1 px-2 py-1 bg-[#2E2E44]"
+          >
+            <img class="w-1/4" src="/assets/icons/user-icon.png" />
+            <a
+              routerLink="/login"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+              >LOGIN</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
